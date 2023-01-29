@@ -5,11 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <title>My Portfolio</title>
   </head>
   <body>
-    <h1>ポートフォリオサイト.</h1>
+    <!--ヘッダー　-->
+    <header>
+      <!--　-->
+      <h1>Self Introduction</h1>
+      <p>week3 課題</p>
+      <ul>
+        <li><a href="ProfileTarget">Profile</a></li>
+        <li><a href="#">Hobby</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Mood</a></li>
+      </ul>
+    </header>
+
+     <!--中心　-->
+    <div class="container" id="container">
+
+      <!--content1　-->
+      <div class="content1">
+        <!--long写真入れる　-->
+        
+          <img src="images/long1.jpeg"/>
+          <img src="images/long2.jpeg"/>
+          <img src="images/long3.jpeg"/>
+          <img src="images/long5.jpeg"/>
+        
+
+      </div>
+
+      <!--content2　-->
+      <div class="content2" >
+        <h2 id="ProfileTarget">Profile</h2>
+
+        <article>
+        
+         <div class="content2-item">
+          <div class="content2-item-img">
+            <img src="images/profile.png" alt="プロフィール画像"/>
+        </div>
+        <div class="content2-item-ul">
+          <ul>
+            <li>水野未悠(MiyuuMizuno)</li>
+            <li>出身：2000年12月14日生まれ 福岡市出身</li>
+            <li><a href>大学：筑紫女学年大学 人間化学部</a></li>
+            <li>よろしくお願いします！</li>
+          </ul>
+        </div>
+         </div>
+        </article>
+
+
+        <main>
+          <h2>Hobby</h2>
+            <!--趣味１　-->
+            <div class="hobby">
+              <div class="hobby-item">
+                <img src="images/hobby1.png" alt="画像"/>
+                <h3>#温泉</h3>
+                <p>熊本県山鹿市にある<br>平山温泉にハマってます。<br>お湯がトロトロ~</p>
+              </div>
+              <!--趣味２　-->
+              <div class="hobby-item">
+                <img src="images/hobby2.png" alt="画像"/>
+                <h3>#ドライブ</h3>
+                <p>週一ペースで行きます！<br>最近は雪でおあずけが多い…</p>
+              </div>
+              <!--趣味３　-->
+              <div class="hobby-item">
+                <img src="images/hobby3.jpg" alt="画像"/>
+                <h3>#食べること</h3>
+                <p>食べることが大好きです！！<br>特にいちごが好物</p>
+              </div>
+            </div>
+
+          <h2>Quiz</h2>
+            <div class="quiz">
+              <div class="quiz-item">
+                <img src="images/quiz1.jpeg" alt="画像"/>
+                <h4>好きな映画は？</h4>
+                <button id="movieButton1">スターウォーズ</button>
+                <button id="movieButton2">マーベル</button>
+                <button id="movieButton3">プリンセス</button>
+                <p id="movieFb">🗣</p>
+              </div>
+
+              <div class="quiz-item">
+                <img src="images/quiz3.png" alt="画像"/>
+                <h4>好きな色は？</h4>
+                <button id="colorButton1">グレー</button>
+                <button id="colorButton2">オレンジ</button>
+                <button id="colorButton3">紫</button>
+                <p id="colorFb">🗣</p>
+              </div>
+
+              <div class="quiz-item">
+                <img src="images/quiz2.png" alt="画像"/>
+                <h4>好きな動物は？</h4>
+                <button id="aniButton1">犬</button>
+                <button id="aniButton2">コアラ</button>
+                <button id="aniButton3">きつね</button>
+                <p id="aniFb">🗣</p>
+              </div>
+
+              <div class="quiz-item">
+                <img src="images/quiz4.png" alt="画像"/>
+                <h4>何して遊ぶ？</h4>
+                <button id="playButton1">モンスト</button>
+                <button id="playButton2">スプラトゥーン</button>
+                <button id="playButton3">ポケモンカード</button>
+                <p id="playFb">🗣</p>
+              </div>
+
+
+            </div>
+          </main>
+       </div>
+
+      <!--content3　-->
+      <div class="content3">
+       
+        <div class="backGroundColor">
+          <h2>Mood</h2>
+            <p>雰囲気を変えてみよう！</p>
+            <button id="mood">クリック<br>してね！</button>
+
+        </div>
+       
+       
+
+       </div>
+
+    
+     <!--フッター　-->
+    <footer>
+      <h5>Thank You For Listening</h5>
+      <p>2023/01/29</p>
+      
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
