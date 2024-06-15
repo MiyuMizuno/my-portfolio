@@ -6,6 +6,7 @@
 body {
   font-family: “M PLUS Rounded 1c”, “Kokoro”, “sans-serif”;
   font-size: 20px;
+  background-color: #fafdff;
 }
 
 header {
@@ -32,7 +33,7 @@ header ul li {
   font-family: “Caveat”, cursive;
 
   text-align: center;
-  background-color: white;
+  background-color: #fafdff;
   border-left: 1px dotted rgb(6, 6, 6);
 }
 a {
@@ -40,11 +41,11 @@ a {
   color: black;
 }
 .content1 {
-  margin: 30px 100px 30px 60px;
+  margin: 60px 100px 30px 60px;
 
   white-space: nowrap;
   width: 1300px;
-  height: 500px;
+  height: 450px;
   overflow: hidden;
 }
 .content1 img {
@@ -72,7 +73,7 @@ a {
 
 .content1 > :first-child {
   animation-name: slide-4;
-  animation-duration: 8s;
+  animation-duration: 18s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
 }
@@ -108,9 +109,14 @@ a {
 
 .content2-item ul {
   list-style: none;
-  padding: 85px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.content2-item ul li a {
+  list-style: 1px solid black;
+  text-decoration: dashed;
 }
 .content2-item ul li {
   padding-bottom: 30px;
@@ -129,9 +135,9 @@ a {
 }
 
 .hobby-item img {
-  margin: 100px 50px 10px 135px;
+  margin: 100px 0px 10px 80px;
   text-align: center;
-  width: 40%;
+  width: 65%;
 }
 .hobby-item h3 {
   text-align: center;
@@ -170,10 +176,6 @@ a {
 .quiz-item p {
   margin-top: 15px;
   margin-left: 20px;
-}
-
-.content3 {
-  display: flex;
 }
 
 .content3 p {

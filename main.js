@@ -1,3 +1,21 @@
+const onsenText = document.getElementById("onsen");
+const driveText = document.getElementById("drive");
+const eatText = document.getElementById("eat");
+const onsenImg = document.getElementById("onsenImg");
+const driveImg = document.getElementById("driveImg");
+const eatImg = document.getElementById("eatImg");
+onsenText.style.display = "none";
+
+//質問① onsenImgにマウスが乗ったときのみonsenTextを表示したい。
+onsenImg.onmouseover = function () {
+  console.log(0);
+  if (onsenText.style.display !== "none") {
+    onsenText.style.display = "none";
+  } else {
+    onsenText.style.display = "";
+  }
+};
+
 const movieButton1 = document.getElementById("movieButton1");
 const movieButton2 = document.getElementById("movieButton2");
 const movieButton3 = document.getElementById("movieButton3");
@@ -201,9 +219,17 @@ for (let playNumber = 0; playNumber <= playButton.length; playNumber++) {
 }
 
 ///ここからはMood//
-const moodButton = document.getElementById("mood");
+const moodButton = document.getElementById("moodButton");
+const moodText = document.getElementById("moodText");
 
+//質問② moodボタンを押したとき、230行目以降を適応して背景色を変更したい
 moodButton.onclick = function () {
-  moodButton.textContent == "いい感じ！";
-  moodButton.style.backgroundColor = "#eee";
+  moodText.textContent = "いい感じ！";
+  changeColor();
 };
+
+function changeColor() {
+  document.body.style.backgroundColor = "#202f55";
+  document.body.style.color = "#f5ecf4";
+  document.header.style.backgroundColor = "#bcbace";
+}
